@@ -1,0 +1,16 @@
+#include<stdio.h>
+struct book
+{
+	int bno,qty;
+	char bname[20];
+	float rate,total;
+}b1;
+int main()
+{
+	int i,n,t;
+	float p;
+	printf("enter bno,name,rate qty");
+	scanf("%d%s%f%d",&b1.bno,&b1.bname,&b1.rate,&b1.qty);
+	b1.total=b1.qty*b1.rate;
+	printf("bno=%d\nbame=%s\nrate=%f\nqty=%d\ntotal=%f",b1.bno,b1.bname,b1.rate,b1.qty,b1.total);
+}
