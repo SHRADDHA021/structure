@@ -1,0 +1,18 @@
+#include<stdio.h>
+struct emp
+{
+	int id;
+	char ename[20];
+	struct joindate
+	{
+		int dd,mm,yy;
+	}d1;
+}e1;
+
+int main()
+{
+	
+	printf("enetr id ename joindate");
+	scanf("%d%s%d%d%d",&e1.id,&e1.ename,&e1.d1.dd,&e1.d1.mm,&e1.d1.yy);
+	printf("id=%d\nename=%s\njoindate=%d/%d/%d",e1.id,e1.ename,e1.d1.dd,e1.d1.mm,e1.d1.yy);
+}
