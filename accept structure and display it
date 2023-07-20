@@ -1,0 +1,37 @@
+#include<stdio.h>
+#include<string.h>
+struct stud
+{
+	int rno;
+	char sname[20];
+	float per;
+	char sclass[20];
+}s1[100];
+int main()
+{
+	char c[20];
+	int i,n;
+	printf("enter limit");
+	scanf("%d",&n);
+	for(i=0;i<n;i++)
+	{
+		printf("enter rno sname per sclass ");
+		scanf("%d%s%f%s",&s1[i].rno,&s1[i].sname,&s1[i].per,&s1[i].sclass);
+	}
+
+	for(i=0;i<n;i++)
+	{
+		
+		
+		printf("\n stud rno=%d",s1[i].rno);
+			printf("\n stud name=%d",s1[i].sname);
+				printf("\n stud per=%f",s1[i].per);
+					printf("\n stud class=%s",s1[i].sclass);
+					
+	
+	
+}
+
+	
+	
+}
