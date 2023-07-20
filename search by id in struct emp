@@ -1,0 +1,33 @@
+#include<stdio.h>
+struct emp
+{
+	int id;
+	char ename[20];
+	struct joindate
+	{
+		int dd,mm,yy;
+	}d1;
+}e1;
+
+int main()
+{
+	int i,n,num;
+	printf("enter limit");
+	scanf("%d",&n);
+	for(i=0;i<n;i++)
+	{
+	
+	printf("enetr id ename joindate");
+	scanf("%d%s%d%d%d",&e1.id,&e1.ename,&e1.d1.dd,&e1.d1.mm,&e1.d1.yy);
+}
+printf("enter num to find");
+scanf("%d",&num);
+	for(i=0;i<n;i++)
+	
+{if(e1.id==num)
+		printf("id=%d\nename=%s\njoindate=%d/%d/%d",e1.id,e1.ename,e1.d1.dd,e1.d1.mm,e1.d1.yy);
+		break;
+}
+if(i==n)
+printf("not found");
+}
