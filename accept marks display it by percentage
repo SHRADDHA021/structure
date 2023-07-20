@@ -1,0 +1,19 @@
+#include<stdio.h>
+struct stud
+{
+	int rno;
+	char sname[20];
+	int m1,m2,m3,m4,m5,m6;
+}s1;
+int main()
+{
+	int i,n,t;
+	float p;
+	printf("enter rool no,name");
+	scanf("%d%s",&s1.rno,&s1.sname);
+	printf("six sub marks");
+	scanf("%d%d%d%d%d%d",&s1.m1,&s1.m2,&s1.m3,&s1.m4,&s1.m5,&s1.m6);
+	t=s1.m1+s1.m2+s1.m3+s1.m4+s1.m5,s1.m6;
+	p=t/6;
+	printf("rno=%d\nname=%s\nper=%f",s1.rno,s1.sname,p);
+}
